@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* Add styling for the gender radio inputs */
+.profile-form input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Style for the profile-container */
+.profile-container {
+    max-width: 600px;
+    margin: 70px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Style for the profile-header */
+/* .profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+} */
+
+/* Style for the profile-picture */
+.profile-picture img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Style for the change-picture-button */
+#change-picture-button {
+    display: block;
+    margin: 10px auto;
+    padding: 5px 10px;
+    color: #000000;
+    /*background-color: #007bff;*/
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#change-picture-button:hover {
+	color: white;
+    background-color: #000000;
+    
+}
+
+/* Style for the profile-picture and "Change Picture" button */
+.profile-picture {
+    float: left;
+    margin-right: 20px;
+}
+
+/* Style for the profile-info */
+/* .profile-info {
+    float: left;
+} */
+
+/* Style for the profile-info paragraphs */
+/* .profile-info p {
+    margin: 0;
+    line-height: 1.5;
+} */
+
+/* Add some spacing between profile-picture and profile-form */
+/* .profile-form {
+    clear: both;
+    margin-top: 20px;
+} */
+
+/* Style for the profile-info section */
+.profile-info {
+    float: left;
+    font-size: 16px;
+    margin-top: 48px;
+    margin-left: 70px;
+}
+
+/* Style for the profile-info paragraphs */
+.profile-info p {
+    margin: 5px 0;
+}
+
+/* Add some additional styling to make the profile info stand out */
+.profile-info p {
+    font-weight: bold;
+    color: #333; /* Change the text color to a dark gray */
+}
+
+/* Add some margin to create space between profile info and the form */
+.profile-form {
+    clear: both;
+    margin-top: 20px;
+}
+
+.form {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Style only the profile form inputs */
+.profile-input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #dddfe2;
+    border-radius: 4px;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #dddfe2;
+    border-radius: 4px;
+}
+
+
+
+
+
+/* Additional styles for DOB select elements */
+.dob-select {
+    width: calc(33.33% - 8px); /* Divide width evenly among three selects */
+    padding: 10px;
+    margin: 8px 2px; /* Add a small margin between selects */
+    border: 1px solid #dddfe2;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.dob-select:focus {
+    outline: none;
+    border-color: #0e59a0; /* Highlight border color when focused */
+}
+
+/* Additional styles for gender radio options */
+.gender-options {
+    display: flex;
+    margin-top: 10px;
+}
+
+.gender-options input[type="radio"] {
+    display: none;
+}
+
+.gender-options label {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.gender-options label::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #dddfe2;
+    border-radius: 50%;
+    margin-right: 6px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.gender-options input[type="radio"]:checked + label::before {
+    background-color: #0e59a0; /* Change color when selected */
+    border-color: #0e59a0;
+}
+
+
+
+.profile-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+#update-button {
+    width: 100%;
+    padding: 10px;
+    color: #000000;
+    /*background-color: #1877f2;*/
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+}
+
+#update-button:hover {
+    color: white;
+    background-color: #000000;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}

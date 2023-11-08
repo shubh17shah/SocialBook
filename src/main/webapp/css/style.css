@@ -1,0 +1,183 @@
+@charset "ISO-8859-1";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    border: 1px solid #dddfe2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 400px;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    max-width: 80%;
+    max-height: 100px;
+    margin-top: 80px;
+    margin-bottom: 5px; /* Adjust the margin as needed */
+}
+
+.logologin {
+    max-width: 80%;
+    max-height: 100px;
+    margin-bottom: 5px; /* Adjust the margin as needed */
+}
+
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dddfe2;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+}
+
+.tab-btn.active {
+    /* background-color: #1877f2; */
+    border-bottom: 2px solid #000000;
+    font-weight: bold;
+}
+
+.tab-btn.hidden{
+    /* border-bottom: 2px solid #1877f2 !important; */
+    border-bottom: 2px solid #000000;
+    font-weight: bold;
+}
+
+.form {
+    padding: 20px;
+}
+
+#loginhead {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-left: 150px;
+}
+#signuphead {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-left: 135px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #dddfe2;
+    border-radius: 4px;
+}
+
+/* Additional styles for DOB select elements */
+.dob-select {
+    width: calc(33.33% - 8px); /* Divide width evenly among three selects */
+    padding: 10px;
+    margin: 8px 2px; /* Add a small margin between selects */
+    border: 1px solid #dddfe2;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.dob-select:focus {
+    outline: none;
+    border-color: #0e59a0; /* Highlight border color when focused */
+}
+
+/* Additional styles for gender radio options */
+.gender-options {
+    display: flex;
+    margin-top: 10px;
+}
+
+.gender-options input[type="radio"] {
+    display: none;
+}
+
+.gender-options label {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.gender-options label::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #dddfe2;
+    border-radius: 50%;
+    margin-right: 6px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.gender-options input[type="radio"]:checked + label::before {
+    background-color: #0e59a0; /* Change color when selected */
+    border-color: #0e59a0;
+}
+
+/* Additional styles for the signup form */
+.signup-form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.signup-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    /* background-color: #000000; */
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    color: white;
+    background-color: #000000;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
